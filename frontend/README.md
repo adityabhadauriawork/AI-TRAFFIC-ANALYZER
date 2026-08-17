@@ -1,16 +1,73 @@
-# React + Vite
+# 🚦 VisionFlow AI — Intelligent Traffic Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<p align="center">
+  <strong>AI-Powered Traffic Monitoring & Decision Support System</strong>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?style=for-the-badge&logo=react&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-Backend-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/YOLOv8-Computer%20Vision-00FFFF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/ByteTrack-Object%20Tracking-7B61FF?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenCV-Video%20Processing-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**VisionFlow AI** is an AI-powered traffic analysis platform that converts ordinary traffic videos into meaningful traffic intelligence.
 
-## Expanding the Oxlint configuration
+Instead of manually monitoring CCTV footage, VisionFlow uses **YOLOv8 for vehicle detection** and **ByteTrack for multi-object tracking** to identify, track and count vehicles automatically.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The system analyzes traffic footage and generates:
+
+- Vehicle counts
+- Vehicle classification
+- Traffic density
+- Congestion score
+- Traffic flow patterns
+- Peak vehicle activity
+- Vehicle movement statistics
+- Processed AI-annotated video
+- AI-generated traffic recommendations
+- Interactive analytics dashboard
+
+The long-term goal is to evolve VisionFlow into a complete **Intelligent Transportation System (ITS)** capable of assisting traffic authorities with real-time decision-making.
+
+---
+
+# 🎯 Problem Statement
+
+Traffic monitoring is often dependent on manual observation of CCTV feeds. This approach can be:
+
+- Time-consuming
+- Difficult to scale
+- Prone to human error
+- Inefficient for continuous monitoring
+- Difficult to convert into actionable insights
+
+VisionFlow addresses this problem by automatically extracting useful information from traffic footage using computer vision and AI.
+
+---
+
+# 💡 Solution
+
+VisionFlow follows an automated pipeline:
+
+```text
+Traffic Video
+      ↓
+OpenCV Video Processing
+      ↓
+YOLOv8 Vehicle Detection
+      ↓
+ByteTrack Object Tracking
+      ↓
+Vehicle Classification & Counting
+      ↓
+Traffic Analytics Engine
+      ↓
+AI Recommendations
+      ↓
+Interactive React Dashboard
