@@ -1,0 +1,52 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+.home-section {
+  width: 100%;
+  position: relative;
+}
+
+.hero-section {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+}
+
+.trusted-section {
+  padding: 72px 0;
+}
+
+.features-section {
+  padding: 120px 0;
+}
+
+.workflow-section {
+  padding: 120px 0;
+}
+
+.demo-section {
+  padding: 120px 0 140px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+  }
+
+  .trusted-section,
+  .features-section,
+  .workflow-section,
+  .demo-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
